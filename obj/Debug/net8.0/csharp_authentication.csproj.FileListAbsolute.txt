@@ -1,0 +1,14 @@
+/home/user/Desktop/Projects/csharp_authentication/bin/Debug/net8.0/csharp_authentication
+/home/user/Desktop/Projects/csharp_authentication/bin/Debug/net8.0/csharp_authentication.deps.json
+/home/user/Desktop/Projects/csharp_authentication/bin/Debug/net8.0/csharp_authentication.runtimeconfig.json
+/home/user/Desktop/Projects/csharp_authentication/bin/Debug/net8.0/csharp_authentication.dll
+/home/user/Desktop/Projects/csharp_authentication/bin/Debug/net8.0/csharp_authentication.pdb
+/home/user/Desktop/Projects/csharp_authentication/obj/Debug/net8.0/csharp_authentication.GeneratedMSBuildEditorConfig.editorconfig
+/home/user/Desktop/Projects/csharp_authentication/obj/Debug/net8.0/csharp_authentication.AssemblyInfoInputs.cache
+/home/user/Desktop/Projects/csharp_authentication/obj/Debug/net8.0/csharp_authentication.AssemblyInfo.cs
+/home/user/Desktop/Projects/csharp_authentication/obj/Debug/net8.0/csharp_authentication.csproj.CoreCompileInputs.cache
+/home/user/Desktop/Projects/csharp_authentication/obj/Debug/net8.0/csharp_authentication.dll
+/home/user/Desktop/Projects/csharp_authentication/obj/Debug/net8.0/refint/csharp_authentication.dll
+/home/user/Desktop/Projects/csharp_authentication/obj/Debug/net8.0/csharp_authentication.pdb
+/home/user/Desktop/Projects/csharp_authentication/obj/Debug/net8.0/csharp_authentication.genruntimeconfig.cache
+/home/user/Desktop/Projects/csharp_authentication/obj/Debug/net8.0/ref/csharp_authentication.dll
