@@ -15,12 +15,14 @@ class Program
             {
                 File.Create(pathname + users).Close();
                 Console.WriteLine("database created");
-            } else {
+            }
+            else
+            {
                 Console.WriteLine("database exists");
             }
         }
     }
-    
+
     class LoginInterface
     {
         public string? name;
@@ -36,7 +38,7 @@ class Program
         }
     }
 
-      class RegisterInterface
+    class RegisterInterface
     {
         public string? name;
         public string? pass;
@@ -50,12 +52,12 @@ class Program
             pass = Console.ReadLine() ?? "password not provided";
         }
     }
-  
-    class User 
+
+    class User
     {
         public string? username;
         public string? password;
-  
+
         public void registerUser(string name, string pass, string users)
         {
             username = name;
@@ -91,7 +93,7 @@ class Program
                 numBytesRequested: 256 / 8)
             );
             string saltToString = "";
-            foreach (byte item in salt) 
+            foreach (byte item in salt)
             {
                 saltToString += item.ToString() + " ";
             }
@@ -100,7 +102,7 @@ class Program
         }
 
 
-        public void loginUser(string name , string pass, string users)
+        public void loginUser(string name, string pass, string users)
         {
             username = name;
             password = pass;
@@ -124,16 +126,18 @@ class Program
                     {
                         Console.WriteLine("You are logged in");
                         break;
-                    } else {
+                    }
+                    else
+                    {
                         continue;
-                        }
+                    }
                 }
-                    Console.WriteLine("Username or password is wrong");
-                    Environment.Exit(1);
+                Console.WriteLine("Username or password is wrong");
+                Environment.Exit(1);
 
             }
         }
-        public void deleteUser(string name , string users)
+        public void deleteUser(string name, string users)
         {
             username = name;
             string data = File.ReadAllText(pathname + users);
@@ -149,7 +153,7 @@ class Program
                         rewrittenData += item + ",";
                     }
                 }
-                
+
             }
             File.WriteAllText(pathname + users, rewrittenData);
         }
@@ -163,28 +167,29 @@ class Program
         RegisterInterface register = new RegisterInterface();
         LoginInterface login = new LoginInterface();
         Console.WriteLine("To register - 0, to login - 1");
-        string ?reply = Console.ReadLine();
+        string? reply = Console.ReadLine();
         if (reply != "" && reply != null)
         {
             if (reply.Contains('0'))
-        {
-            register.regUser();
-            if (register.name != null && register.pass != null)
-            user.registerUser(register.name, register.pass, "users");
-        } else if (reply.Contains('1'))
-        {
-            login.loginUser();
-            if (login.name != null && login.pass != null)
-                user.loginUser(login.name, login.pass, "users");
-            Thread.Sleep(2000);
-            Console.WriteLine("To del user - del");
-            string response = Console.ReadLine() ?? "no input";
-            if (response.Contains("del") && login.name != null)
             {
-                user.deleteUser(login.name, "users");
-                Console.WriteLine($"User {login.name} deleted");
+                register.regUser();
+                if (register.name != null && register.pass != null)
+                    user.registerUser(register.name, register.pass, "users");
             }
-        }
+            else if (reply.Contains('1'))
+            {
+                login.loginUser();
+                if (login.name != null && login.pass != null)
+                    user.loginUser(login.name, login.pass, "users");
+                Thread.Sleep(2000);
+                Console.WriteLine("To del user - del");
+                string response = Console.ReadLine() ?? "no input";
+                if (response.Contains("del") && login.name != null)
+                {
+                    user.deleteUser(login.name, "users");
+                    Console.WriteLine($"User {login.name} deleted");
+                }
+            }
         }
     }
 }
