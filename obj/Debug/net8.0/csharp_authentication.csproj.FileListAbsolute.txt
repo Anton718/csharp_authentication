@@ -12,3 +12,4 @@
 /home/user/Desktop/Projects/csharp_authentication/obj/Debug/net8.0/csharp_authentication.pdb
 /home/user/Desktop/Projects/csharp_authentication/obj/Debug/net8.0/csharp_authentication.genruntimeconfig.cache
 /home/user/Desktop/Projects/csharp_authentication/obj/Debug/net8.0/ref/csharp_authentication.dll
+/home/user/Desktop/Projects/csharp_authentication/obj/Debug/net8.0/csharp_authentication.sourcelink.json
